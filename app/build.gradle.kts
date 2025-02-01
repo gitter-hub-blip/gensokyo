@@ -4,13 +4,17 @@
  * This project uses @Incubating APIs which are subject to change.
  */
 
+
+//CONFIGURATION IN APP
 plugins {
     id("buildlogic.java-application-conventions")
 }
 
 dependencies {
-    implementation("org.apache.commons:commons-text")
-    implementation(project(":utilities"))
+    //implementation("org.apache.commons:commons-text")
+    implementation(project(":network"))
+    implementation(project(":database"))
+    implementation(project(":cryption"))
 }
 
 application {
